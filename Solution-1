@@ -1,0 +1,31 @@
+-- 1. switch to the mde database
+use mde;
+show tables;
+-- 2. create the mde database
+create database mde;
+-- 3. create the mde table 
+create table mde.student(
+serialnumber int,
+rollnumber int,
+name varchar(20),
+department varchar(20),
+collegename varchar(20),
+place varchar(20)
+);
+use mde;
+show tables;
+-- 4. retrieve all records from the mde table
+select*from mde.student;
+select rollnumber from mde.student;
+-- 5. insert records into the mde table
+insert into mde.student values 
+(1,20001,"Sathya","MDE","mec","Rasipuram"),
+(2,20002,"Harini","ADE","mec","Rasipuram"),
+(3,20003,"Dharanya","ECE","mec","Rasipuram"),
+(4,20004,"Sushmitha","EEE","mec","Rasipuram"),
+(5,20005,"Kansiya","BME","mec","Rasipuram"),
+(6,20006,"Abirami","MDE","mec","Rasipuram"),
+(7,20007,"Gopika","ADE","mec","Rasipuram"),
+(8,20008,"Nivetha","ECE","mec","Rasipuram"),
+(9,20009,"Vinitha","EEE","mec","Rasipuram"),
+(10,20010,"sri","BME","mec","Rasipuram");
